@@ -23,6 +23,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>21</java.version>
         <kotlin.version>1.9.22</kotlin.version>
+        <jjwt.version>0.12.2</jjwt.version>
+        <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
 
         <spring-cloud-dependencies.version>2023.0.0</spring-cloud-dependencies.version>
         <spring-doc-openapi.version>2.2.0</spring-doc-openapi.version>
@@ -52,6 +54,26 @@
                 <version>${spring-doc-openapi.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco-maven-plugin.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
