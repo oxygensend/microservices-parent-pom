@@ -25,6 +25,8 @@
         <kotlin.version>1.9.22</kotlin.version>
         <jjwt.version>0.12.2</jjwt.version>
         <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
+        <imgscalr.version>4.2</imgscalr.version>
+        <webp-imageio>0.2.2</webp-imageio>
 
         <spring-cloud-dependencies.version>2023.0.0</spring-cloud-dependencies.version>
         <spring-doc-openapi.version>2.2.0</spring-doc-openapi.version>
@@ -74,7 +76,18 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco-maven-plugin.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.imgscalr</groupId>
+                <artifactId>imgscalr-lib</artifactId>
+                <version>${imgscalr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.gotson</groupId>
+                <artifactId>webp-imageio</artifactId>
+                <version>${webp-imageio.version}</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <dependencies>
